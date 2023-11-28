@@ -1,0 +1,630 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ZmelksNotebook",
+				"abbreviation": "ZN",
+				"full": "Zmelks Notebook",
+				"color": "#ff8d2d",
+				"authors": [
+					"Konrad Ebel"
+				],
+				"convertedBy": [
+					"Konrad Ebel"
+				]
+			}
+		]
+	},
+	
+	"feat": [
+		{
+			"name": "Athlete",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"Your movement speed increases by 10 feet.",
+						"When you are {@condition prone}, standing up uses only 5 feet of your movement.",
+						"Climbing and swimming doesn't cost you extra movement.",
+						"You can make a running long jump or a running high jump without any previous movement, rather than 10 feet.",
+						"Whenever you {@action Ready} an action, when the trigger occurs and you use your reaction, you can also move up to your speed minus any movement used during your turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Actor",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"cha": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on Charisma ({@skill Deception})and Charisma ({@skill Performance}) checks when trying to pass yourself off as a different person, or mimic the sounds of another creature.",
+						"If you take the {@action Help} action to aid anally attacking a creature, you can do so from up to 30 feet away if the creature can hear or see you.",
+						"You gain proficiency with the {@skill Performance} skill and the disguise kit."
+					]
+				}
+			]
+		},
+		{
+			"name": "Charger",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"entries": [
+				"The whole feat is rewritten as follows:",
+				{
+					"type": "list",
+					"items": [
+						"You increase your Strength score by 1, to a maximum of 20.",
+						"You can use your bonus action to {@action Dash}, with the following conditions and benefits while moving in this way: You must move in a straight line. You have resistance to damage caused by opportunity attacks. If you move at least 10 feet and end your movement adjacent to another creature you deal an additional +5 damage to it the next time you hit it with a weapon attack on this turn or when you shove the creature this turn you can shove it up to 10 feet and knock it {@condition prone}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dragon Hide",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"prerequisite": [
+				{
+					"other": "Prerequisites: Dragonborn"
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con",
+							"cha"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You manifest scales and claws reminiscent of your draconic ancestors. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your scales harden. While you aren't wearing armor, you can calculate your AC as 13 + your Dexterity modifier. You can use a shield and still gain this benefit.",
+						"You grow retractable claws from the tips of your fingers. Extending or retracting the claws requires no action. The claws are natural weapons, which you can use to make unarmed strikes. If you hit with them, you deal slashing damage equal to {@dice 1d4} + your Strength modifier, instead of the normal bludgeoning damage for an unarmed strike.",
+						"When you get hit by a melee attack, as a reaction you can reduce the damage by {@dice 1d6} + your Constitution Modifier, once you used this feature you can't use it again until you finish a long rest"
+					]
+				}
+			]
+		},
+		{
+			"name": "Dual Wielder",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You gain a +1 bonus to AC while you are wielding a separate melee weapon in each hand.",
+						"You can use two-weapon fighting even when the one handed melee weapons you are wielding aren't light.",
+						"You can draw or stow two one-handed weapons when you would normally be able to draw or stow only one.",
+						"Once per turn when you miss with a weapon attack, you can immediately make another attack on the same target with a one handed melee weapon held in the other hand."
+					]
+				}
+			]
+		},
+		{
+			"name": "Dungeon Delver",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"wis",
+							"con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You automatically detect the presence of secret doors within 30 feet of you.",
+						"You have advantage on saving throws made to avoid or resist traps.",
+						"You have resistance to damage dealt by traps.",
+						"Traveling at a fast pace doesn't impose the normal -5 penalty on your passive Wisdom ({@skill Perception}) score."
+					]
+				}
+			]
+		},
+		{
+			"name": "Durable",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"con": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"When you roll a Hit Die to regain hit points, you may roll the Hit Die twice and take the higher result.",
+						"When you gain a level of {@condition exhaustion}, you can make a DC 15 Constitution saving throw as a reaction. On a success, you instead do not gain the level of {@condition exhaustion}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Elemental Adept",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"prerequisite": [
+				{
+					"other": "None"
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"When you gain this feat, choose one of the following damage types: acid, cold, fire, lightning, or thunder.",
+						"You learn one cantrip of your choice that deals damage of the chosen type. Choose either Intelligence, Wisdom, or Charisma as your spellcasting ability for this cantrip.",
+						"Spells you cast ignore resistance to damage of the chosen type.",
+						"In addition, when you roll damage for a spell you cast that deals damage of that type, you can treat any 1 on a damage die as a 2.",
+						"You can select this feat multiple times. Each time you do so, choose a different damage type."
+					]
+				}
+			]
+		},
+		{
+			"name": "Fighting Initiate",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"entries": [
+				"This feat has been removed, and its benefits moved to Weapon Master."
+			]
+		},
+		{
+			"name": "Heavily Armored",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"entries": [
+				"This feat has been removed, and its benefits moved to the Heavy Armor Master feat."
+			]
+		},
+		{
+			"name": "Lucky",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"entries": [
+				"You have 2 Luck Points. The rest of the Feat is unchanged"
+			]
+		},
+		{
+			"name": "Martial Adept",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"entries": [
+				"You gain two Superiority Dice. The rest of the Feat is unchanged."
+			]
+		},
+		{
+			"name": "Moderately Armored",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"entries": [
+				"This feat has been removed, and its benefits moved to Medium Armor Master."
+			]
+		},
+		{
+			"name": "Grappler",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"prerequisite": [
+				{
+					"other": "Strength 13 or higher"
+				}
+			],
+			"ability": [
+				{
+					"str": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Change:",
+					"entries": [
+						"The whole feat is rewritten as follows:",
+						{
+							"type": "list",
+							"items": [
+								"You have advantage on attack rolls against a creature you are grappling.",
+								"Your speed is no longer halved when moving a {@condition grappled} creature with you.",
+								"When you make an opportunity attack, you can make a grapple attack instead of a weapon attack. If you succeed, they are not {@condition grappled}, but the creature's speed becomes 0 for the rest of the turn"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Great Weapon Master",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"entries": [
+				"You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.",
+						"Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a penalty equal to your proficiency bonus to the attack roll. If the attack hits, you add twice your proficiency bonus to the attack's damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Heavy Armor Master",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"prerequisite": [
+				{
+					"other": "Proficiency with medium armor"
+				}
+			],
+			"ability": [
+				{
+					"str": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency with heavy armor and shields.",
+						"While you are wearing heavy armor, bludgeoning, piercing, and slashing damage that you take from non-magical weapons is reduced by 3.",
+						"If you are wearing magical heavy armor with a +1, +2 or +3 enchantment, you can add the bonus to the damage reduction."
+					]
+				}
+			]
+		},
+		{
+			"name": "Keen Mind",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You are able to concentrate on two effects (such as spells) at once. Only one of the effects can be a spell of 3rd level or higher. While you are {@status concentration||concentrating} on two spells you must use your action to maintain {@status concentration}. If you would make a saving throw to maintain {@status concentration} while {@status concentration||concentrating} on two effects, roll once with disadvantage. On a failure, both effects are lost.",
+						"You always know which way is north.",
+						"You always know the number of hours left before the next sunrise or sunset.",
+						"You can accurately recall anything you have ever seen or heard."
+					]
+				}
+			]
+		},
+		{
+			"name": "Lightly Armored",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency with light armor.",
+						"While wearing light or no armor, you have advantage on {@skill Acrobatics} checks to tumble through an enemy's space and opportunity attacks made against you have disadvantage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Linguist",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"int": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You learn three languages of your choice",
+						"You can ably create written ciphers. Others can't decipher a code you create unless you teach them, they succeed on an Intelligence check (DC equal to your Intelligence score + your proficiency bonus), or they use magic to decipher it.",
+						"You can decode any cipher using a language you know with an hour of work.",
+						"You gain proficiency with {@skill History} and calligrapher's supplies."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mage Slayer",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You have practiced techniques useful in melee combat against spellcasters, gaining the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When a creature within 5 feet of you casts a spell, you can use your reaction to make a melee weapon attack against that creature.",
+						"When you damage a creature that is {@status concentration||concentrating} on a spell, that creature has disadvantage on the saving throw it makes to maintain its {@status concentration}.",
+						"You have advantage on saving throws against spells cast by creatures within 5 feet of you."
+					]
+				}
+			]
+		},
+		{
+			"name": "Medium Armor Master",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"prerequisite": [
+				{
+					"other": "Proficiency with light armor"
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency with medium armor.",
+						"Wearing medium armor doesn't impose disadvantage on your Dexterity ({@skill Stealth}) checks.",
+						"When you wear medium armor, you can add 3, rather than 2, to your AC if you have a Dexterity of 16 or higher."
+					]
+				}
+			]
+		},
+		{
+			"name": "Mounted Combatant",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You have advantage on melee attack rolls against any unmounted creature that is smaller than your mount.",
+						"You can force an attack targeted at your mount to target you instead.",
+						"If your mount is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails.",
+						"If your mount is subjected to an effect that allows it to make a Wisdom saving throw, it has advantage on the roll."
+					]
+				}
+			]
+		},
+		{
+			"name": "Savage Attacker",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"Once per turn when you roll damage for a melee weapon attack, you can reroll the weapon's damage dice and use either total."
+					]
+				}
+			]
+		},
+		{
+			"name": "Sharpshooter",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"entries": [
+				"You have mastered ranged weapons and can make shots that others find impossible. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.",
+						"Your ranged weapon attacks ignore half cover and three-quarters cover.",
+						"Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a penalty equal to your proficiency bonus to the attack roll. If the attack hits, you add twice your proficiency bonus to the attack's damage."
+					]
+				}
+			]
+		},
+		{
+			"name": "Skulker",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"prerequisite": [
+				{
+					"other": "Dexterity 13 or higher"
+				}
+			],
+			"ability": [
+				{
+					"dex": 1
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You can take the {@action Hide} action as a bonus action.",
+						"You can try to hide when you are lightly obscured from the creature from which you are hiding.",
+						"When you are hidden from a creature and miss it with an attack, making the attack doesn't reveal your position.",
+						"Dim light doesn't impose disadvantage on your Wisdom ({@skill Perception}) checks relying on sight."
+					]
+				}
+			]
+		},
+		{
+			"name": "Spell Sniper",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"prerequisite": [
+				{
+					"other": "The ability to cast at least one spell"
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"Increase an ability score you use for spellcasting by 1, to a maximum of 20.",
+						"When you cast a spell that requires you to make an attack roll, the spell's range is doubled.",
+						"Your ranged spell attacks ignore half cover and three-quarters cover.",
+						"You learn one cantrip that requires an attack roll. Choose the cantrip from the bard, cleric, druid, sorcerer, warlock, or wizard spell list. Your spellcasting ability for this cantrip depends on the spell list you chose from: Charisma for bard, sorcerer, or warlock; Wisdom for cleric or druid; or Intelligence for wizard."
+					]
+				}
+			]
+		},
+		{
+			"name": "Squat Nimbleness",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"prerequisite": [
+				{
+					"other": "Prerequisites: Dwarf or a small race"
+				}
+			],
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"You are uncommonly nimble for your race. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Increase your walking speed by 10 feet.",
+						"You gain proficiency in the {@skill Acrobatics} or {@skill Athletics} skill (your choice).",
+						"You have advantage on any Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check you make to escape from being {@condition grappled}."
+					]
+				}
+			]
+		},
+		{
+			"name": "Tavern Brawler",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"con"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You are proficient with improvised weapons.",
+						"Your unarmed strike uses a {@damage d4} for damage.",
+						"When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a bonus action to attempt to grapple the target.",
+						"Your improvised weapons can have any of the following properties if the DM deems it appropriate: finesse, heavy, light, reach, two-handed, versatile.",
+						"Your improvised weapons use a {@damage 1d6} for damage, or {@dice 1d8} if they are wielded with two hands."
+					]
+				}
+			]
+		},
+		{
+			"name": "Weapon Master",
+			"source": "ZmelksNotebook",
+			"page": 0,
+			"ability": [
+				{
+					"choose": {
+						"from": [
+							"str",
+							"dex"
+						],
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"items": [
+						"You gain proficiency with all simple and martial weapons.",
+						"Attacking at long range doesn't impose disadvantage on your ranged attack rolls with weapons that have the thrown property.",
+						"You gain one Fighting Style from the fighter class or from your own class."
+					]
+				}
+			]
+		}
+	],
+	
+	
+	
+}
